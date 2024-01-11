@@ -14,7 +14,7 @@ HTML - The markup language used.
 CSS - For styling the components.  
 Bootstrap - Used for responsive design and styling.  
 JavaScript - For client-side logic.  
-jQuery - Simplifies DOM manipulations and AJAX calls.  
+jQuery - Simplifies DOM manipulations.
 
 ### API  
 This project is using [NewsApi](https://newsapi.org)
