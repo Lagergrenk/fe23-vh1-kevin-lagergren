@@ -17,7 +17,7 @@ JavaScript - For client-side logic.
 jQuery - Simplifies DOM manipulations.
 
 ### API  
-This project is using [NewsApi](https://newsapi.org)
+This project is using [CurrentsAPI](https://currentsapi.services/en)
 
 ### More in depth
 [Wiki](https://github.com/Lagergrenk/fe23-vh1-kevin-lagergren/wiki)
@@ -35,4 +35,4 @@ k.lagergren@live.se
 [Github](https://github.com/Lagergrenk/)  
 
 ### Credits  
-[NewsApi](https://newsapi.org) for having a free and easy to use API
+[CurrentsAPI](https://currentsapi.services/en) for having a free and easy to use API
