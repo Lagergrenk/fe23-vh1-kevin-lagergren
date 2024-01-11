@@ -16,11 +16,16 @@ Bootstrap - Used for responsive design and styling.
 JavaScript - For client-side logic.  
 jQuery - Simplifies DOM manipulations and AJAX calls.  
 
+### More in depth
+[Wiki](https://github.com/Lagergrenk/fe23-vh1-kevin-lagergren/wiki)
+
 ### Contributing
-Kevin Lagergren - k.lagergren@live.se  
-https://github.com/Lagergrenk/fe23-vh1-kevin-lagergren/
+Kevin Lagergren  
+k.lagergren@live.se  
+[Project](https://github.com/Lagergrenk/fe23-vh1-kevin-lagergren/)
 
 
 ### Contact 
-Kevin Lagergren - k.lagergren@live.se  
-https://github.com/Lagergrenk/fe23-vh1-kevin-lagergren/
+Kevin Lagergren  
+k.lagergren@live.se  
+[Github](https://github.com/Lagergrenk/)
