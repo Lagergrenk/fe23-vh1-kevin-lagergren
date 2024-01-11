@@ -1,4 +1,6 @@
+import * as eventlistner from "./eventlistner.js";
+import * as display from "./display.js";
 $(document).ready(function () {
-  localStorage.getItem("theme");
-  localStorage.setItem("theme", newTheme);
+  eventlistner.searchButtonClicked();
+  display.displayTop5News();
 });
