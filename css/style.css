@@ -1,0 +1,10 @@
+:root,
+:root.light {
+  --color-bg: #fff;
+  --color-fg: #000;
+}
+
+:root.dark {
+  --color-bg: #343434;
+  --color-fg: #fff;
+}
