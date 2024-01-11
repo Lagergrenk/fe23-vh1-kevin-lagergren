@@ -1,4 +1,4 @@
-# News Webpage
+# News Webbpage
 ## Project Description
 Welcome to the repository for my News Webpage, a dynamic website that showcases current news articles from various sources. This project is designed to demonstrate my skills in web development, particularly in using APIs, JavaScript, jQuery, and Bootstrap.
 
