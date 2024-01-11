@@ -1,3 +1,5 @@
+import { errorHandler } from "./errorhandler.js";
+
 const API_KEY = "ffefe1630a964061a4d4deee6c55f71a";
 
 const API_URL = "https://newsapi.org/v2";
@@ -8,6 +10,7 @@ export function getEveryNewsFromInputTopic(topic) {
       .then((res) => res.json())
       .then((data) => data.articles);
   } catch (err) {
+    errorHandler(err.status);
     console.log(err);
   }
 }
@@ -20,6 +23,7 @@ export function getTopHeadlinesFromCountry(country) {
       .then((res) => res.json())
       .then((data) => data.articles);
   } catch (err) {
+    errorHandler(err.status);
     console.log(err);
   }
 }

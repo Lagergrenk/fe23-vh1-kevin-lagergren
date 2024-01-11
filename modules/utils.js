@@ -18,3 +18,13 @@ export function createElementAndAppendToParent(
 
   $parent.append($element);
 }
+
+export function createPopup(title, content) {
+  $(".modal-title").text(title);
+  $(".modal-body p").text(content);
+  $(".modal").modal("show");
+
+  $('.close, .btn-secondary[data-dismiss="modal"]').click(function () {
+    $(".modal").modal("hide");
+  });
+}
