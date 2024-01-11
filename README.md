@@ -16,6 +16,9 @@ Bootstrap - Used for responsive design and styling.
 JavaScript - For client-side logic.  
 jQuery - Simplifies DOM manipulations and AJAX calls.  
 
+### API  
+This project is using [NewsApi](https://newsapi.org)
+
 ### More in depth
 [Wiki](https://github.com/Lagergrenk/fe23-vh1-kevin-lagergren/wiki)
 
@@ -25,7 +28,11 @@ k.lagergren@live.se
 [Project](https://github.com/Lagergrenk/fe23-vh1-kevin-lagergren/)
 
 
+
 ### Contact 
 Kevin Lagergren  
 k.lagergren@live.se  
-[Github](https://github.com/Lagergrenk/)
+[Github](https://github.com/Lagergrenk/)  
+
+### Credits  
+[NewsApi](https://newsapi.org) for having a free and easy to use API
