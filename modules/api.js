@@ -1,29 +1,28 @@
 import { errorHandler } from "./errorhandler.js";
 
-const API_KEY = "ffefe1630a964061a4d4deee6c55f71a";
+const API_KEY = "UDOfVknw_3UTddVdav9LljOYMRCtaS1LsTDS-1ZWYxxMFfEE";
 
-const API_URL = "https://newsapi.org/v2";
+const API_URL = "https://api.currentsapi.services";
 
-export function getEveryNewsFromInputTopic(topic) {
+export function searchNewsArticles(searchInput) {
   try {
-    return fetch(`${API_URL}/everything?q=${topic}&apiKey=${API_KEY}`)
+    return fetch(
+      `${API_URL}/v1/search?keywords=${searchInput}&apiKey=${API_KEY}`
+    )
       .then((res) => res.json())
-      .then((data) => data.articles);
+      .then((data) => data.news);
   } catch (err) {
     errorHandler(err.status);
-    console.log(err);
   }
 }
 
-export function getTopHeadlinesFromCountry(country) {
+export function getLatestNewsArticles() {
   try {
-    return fetch(
-      `${API_URL}/top-headlines?country=${country}&apiKey=${API_KEY}`
-    )
+    //language=eng is optional, but it will filter out articles that are not in English
+    return fetch(`${API_URL}/v1/latest-news?language=en&apiKey=${API_KEY}`)
       .then((res) => res.json())
-      .then((data) => data.articles);
+      .then((data) => data.news);
   } catch (err) {
     errorHandler(err.status);
-    console.log(err);
   }
 }
