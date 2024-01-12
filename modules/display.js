@@ -1,6 +1,8 @@
 import * as utils from "./utils.js";
 import * as api from "./api.js";
 
+//TODO: fix links to articles
+
 export function displayLatestNewsArticles(
   sliceStart,
   sliceEnd,
@@ -10,34 +12,16 @@ export function displayLatestNewsArticles(
   api.getLatestNewsArticles().then((articles) => {
     const slicedArticles = articles.slice(sliceStart, sliceEnd);
     if (articles.length > 0) {
+      console.log(slicedArticles);
       slicedArticles.forEach((article) => {
-        const $card = $("<div>").addClass("card w-100 small-card");
-        if (image) {
-          utils.createElementAndAppendToParent(
-            $card,
-            "img",
-            article.image,
-            "card-img-top"
-          );
-        }
-
-        const $cardBody = $("<div>").addClass("card-body");
-        $card.append($cardBody);
-        utils.createElementAndAppendToParent(
-          $cardBody,
-          "h5",
+        utils.createNewsCard(
+          $(".main-news"),
           article.title,
-          "card-title"
+          article.description,
+          article.image,
+          article.url
         );
-
-        $parent.append($card);
       });
-    } else {
-      utils.createElementAndAppendToParent(
-        $parent,
-        "p",
-        "No articles available."
-      );
     }
   });
 }
