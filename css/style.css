@@ -1,6 +1,6 @@
 /* Basic Styles for News Card */
 .news-card {
-  margin-bottom: 20px; /* Space between cards */
+  margin: 20px; /* Space between cards */
   border: 1px solid #ddd; /* Border for the card */
   background-color: lightgrey; /* Light grey background */
   overflow: hidden;
