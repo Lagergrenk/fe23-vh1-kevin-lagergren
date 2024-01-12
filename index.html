@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News News News News| Kevin Lagergren</title>
+    <title>News News News News | Kevin Lagergren</title>
     <!--Bootstrap Icons -->
     <link
       rel="stylesheet"
@@ -59,13 +59,21 @@
           >
             <ul class="navbar-nav">
               <li id="home" class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  data-type="home"
+                  >Home</a
+                >
               </li>
               <li id="news" class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about" data-type="about">About</a>
               </li>
               <li id="contact" class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact" data-type="contact"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
@@ -91,21 +99,13 @@
     </header>
 
     <div class="container-fluid">
-      <div class="row">
+      <div class="row justify-content-center">
         <!-- Main Content -->
-        <main class="col-md-8">
-          <div class="news">
+        <main class="col-12 col-md-12 col-lg-12">
+          <div class="main-news d-flex flex-wrap justify-content-center">
             <!-- Main content goes here -->
           </div>
         </main>
-
-        <!-- Sidebar -->
-        <aside class="col-md-4">
-          <div id="sidebar">
-            <h2>Top news from US</h2>
-            <div class="top-news"></div>
-          </div>
-        </aside>
       </div>
     </div>
     <div class="modal" tabindex="-1" role="dialog">
