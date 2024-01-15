@@ -3,5 +3,5 @@ import * as display from "./display.js";
 $(document).ready(function () {
   eventlistner.searchButtonClicked();
   eventlistner.navbarButtonClicked(".nav-link");
-  display.displayLatestNewsArticles(0, 10);
+  display.displayLatestNewsArticles();
 });

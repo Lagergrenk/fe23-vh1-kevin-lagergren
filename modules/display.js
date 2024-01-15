@@ -3,14 +3,9 @@ import * as api from "./api.js";
 
 //TODO: fix links to articles
 
-export function displayLatestNewsArticles(
-  sliceStart,
-  sliceEnd,
-  $parent,
-  image
-) {
+export function displayLatestNewsArticles() {
   api.getLatestNewsArticles().then((articles) => {
-    const slicedArticles = articles.slice(sliceStart, sliceEnd);
+    const slicedArticles = articles.slice(0, 5);
     if (articles.length > 0) {
       console.log(slicedArticles);
       slicedArticles.forEach((article) => {
@@ -24,4 +19,12 @@ export function displayLatestNewsArticles(
       });
     }
   });
+}
+
+export function displayLoader() {
+  $(".main-news").append(`
+    <div class="loader-container justify-content-center">
+      <div class="loader"></div>
+    </div>
+  `);
 }
