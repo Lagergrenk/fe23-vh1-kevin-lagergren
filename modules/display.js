@@ -1,8 +1,7 @@
 import * as utils from "./utils.js";
 import * as api from "./api.js";
 
-//TODO: fix links to articles
-
+// Display latest news articles on page load
 export function displayLatestNewsArticles() {
   api.getLatestNewsArticles().then((articles) => {
     const slicedArticles = articles.slice(0, 10);
@@ -20,6 +19,7 @@ export function displayLatestNewsArticles() {
   });
 }
 
+// Display loader
 export function displayLoader() {
   $(".main-news").append(`
     <div class="loader-container justify-content-center">

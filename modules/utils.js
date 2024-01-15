@@ -1,3 +1,4 @@
+// Creates a element and appends to parent with content and className
 export function createElementAndAppendToParent(
   $parent,
   element,
@@ -19,7 +20,8 @@ export function createElementAndAppendToParent(
   $parent.append($element);
 }
 
-export function createPopup(title, content) {
+// Show popup with title and content
+export function showPopupModal(title, content) {
   $(".modal").modal("show");
   $(".modal-title").text(title);
   $(".modal-body p").text(content);
@@ -29,6 +31,7 @@ export function createPopup(title, content) {
   });
 }
 
+// Create news card and append to parent
 export function createNewsCard(
   $parentSelector,
   title,

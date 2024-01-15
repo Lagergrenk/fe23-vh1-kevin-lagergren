@@ -2,6 +2,7 @@ import * as utils from "./utils.js";
 import * as api from "./api.js";
 import * as display from "./display.js";
 
+// Event handler for search button
 export function searchButtonClicked(input) {
   $("form").submit(function (event) {
     $(".main-news").empty();
@@ -27,6 +28,7 @@ export function searchButtonClicked(input) {
   });
 }
 
+// Event handler for navbar buttons
 export function navbarButtonClicked(clickedButton) {
   $(".nav-link").click(function (e) {
     e.preventDefault();
@@ -37,10 +39,10 @@ export function navbarButtonClicked(clickedButton) {
         window.location.reload();
         break;
       case "about":
-        utils.createPopup("About", "This is a news website");
+        utils.showPopupModal("About", "This is a news website");
         break;
       case "contact":
-        utils.createPopup("Contact", "Contact us at: simsalabim@foo.fee");
+        utils.showPopupModal("Contact", "Contact us at: simsalabim@foo.fee");
         break;
     }
   });
