@@ -5,9 +5,8 @@ import * as api from "./api.js";
 
 export function displayLatestNewsArticles() {
   api.getLatestNewsArticles().then((articles) => {
-    const slicedArticles = articles.slice(0, 5);
+    const slicedArticles = articles.slice(0, 10);
     if (articles.length > 0) {
-      console.log(slicedArticles);
       slicedArticles.forEach((article) => {
         utils.createNewsCard(
           $(".main-news"),

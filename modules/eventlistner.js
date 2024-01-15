@@ -5,6 +5,7 @@ import * as display from "./display.js";
 export function searchButtonClicked(input) {
   $("form").submit(function (event) {
     $(".main-news").empty();
+    $(".title").empty().append("Search results for :");
     event.preventDefault();
     display.displayLoader();
 
@@ -13,6 +14,7 @@ export function searchButtonClicked(input) {
     api.searchNewsArticles(searchInput).then((articles) => {
       console.log(articles);
       $(".main-news").empty();
+      $(".title").empty().append(`Search results for : ${searchInput}`);
       articles.forEach((article) => {
         utils.createNewsCard(
           $(".main-news"),
