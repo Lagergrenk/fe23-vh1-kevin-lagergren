@@ -10,7 +10,6 @@ export function searchButtonClicked(input) {
     display.displayLoader();
 
     let searchInput = $(".form-control").val();
-    console.log(searchInput);
     api.searchNewsArticles(searchInput).then((articles) => {
       console.log(articles);
       $(".main-news").empty();
