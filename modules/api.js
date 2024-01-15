@@ -10,7 +10,6 @@ export function searchNewsArticles(searchInput) {
       .then((res) => res.json())
       .then((data) => data.news);
   } catch (err) {
-    console.log(err);
     errorHandler(err.status);
   }
 }

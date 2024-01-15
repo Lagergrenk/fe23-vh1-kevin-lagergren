@@ -36,6 +36,11 @@ export function createNewsCard(
   imageUrl,
   articleUrl
 ) {
+  const placeholderImage = "https://placehold.co/300x200";
+  if (imageUrl == "None") {
+    imageUrl = placeholderImage;
+  }
+
   const $card = $("<div>").addClass("card news-card");
   const $img = $("<img>")
     .addClass("card-img-top news-image")
