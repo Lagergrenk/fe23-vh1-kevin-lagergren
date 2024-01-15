@@ -1,7 +1,6 @@
-/* Basic Styles for News Card */
 .news-card {
-  margin: 20px; /* Space between cards */
-  border: 1px solid #ddd; /* Border for the card */
+  margin: 20px;
+  border: 1px solid #ddd;
   background: linear-gradient(
     to top,
     lightgrey 0%,
@@ -15,36 +14,31 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  width: 100%; /* Full width on mobile */
-  min-width: 300px; /* Minimum width for cards */
-  max-width: 350px; /* Maximum width for cards */
+  width: 100%;
+  min-width: 300px;
+  max-width: 350px;
 }
 
-/* News Card Image */
 .news-card .news-image {
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-/* Card Body */
 .news-card .card-body {
   padding: 15px;
-  position: relative; /* For absolute positioning of the button */
+  position: relative;
 }
 
-/* News Title */
 .news-card .news-title {
   color: #333;
   margin-top: 0;
 }
 
-/* News Description */
 .news-card .news-description {
   color: #666;
 }
 
-/* Read More Button - Initially Hidden */
 .news-card .news-link {
   position: absolute;
   bottom: 15px;
