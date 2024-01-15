@@ -35,11 +35,10 @@ export function navbarButtonClicked(clickedButton) {
 
     switch (data) {
       case "home":
-        console.log("home");
+        window.location.reload();
         break;
       case "about":
         utils.createPopup("About", "This is a news website");
-        console.log("about");
         break;
       case "contact":
         utils.createPopup("Contact", "Contact us at: simsalabim@foo.fee");
