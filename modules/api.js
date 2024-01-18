@@ -1,5 +1,6 @@
 import { errorHandler } from "./errorhandler.js";
-const API_KEY = "UDOfVknw_3UTddVdav9LljOYMRCtaS1LsTDS-1ZWYxxMFfEE";
+import { API_KEY } from "./apikey.js";
+
 const API_URL = "https://api.currentsapi.services";
 
 // API call to search for news articles
