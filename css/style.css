@@ -55,6 +55,7 @@
 
     &:hover {
       cursor: pointer;
+      filter: brightness(1.05);
       box-shadow: 0px 15px 35px rgba(227, 252, 239, 0.1),
         0px 5px 15px rgba(0, 0, 0, 0.07);
       transform: scale(1.03);
